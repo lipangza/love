@@ -68,7 +68,7 @@
         ready: function(e) {
             var t = "layer"
               , i = ""
-              , n = (a ? "modules/layer/" : "") + "layer.css";
+              , n = (a ? "modules/layer/" : "") + "layer.css?v=" + r.v + i;
             return a ? layui.addcss(n, e, t) : o.link(n, e, t),
             this
         },

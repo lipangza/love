@@ -3,7 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>随机情话api-demo-浅笑api平台</title>
+  <title>随机情话</title>
+  <meta http-equiv="refresh" content="4">
+<link rel="shortcut icon" href="https://q1.qlogo.cn/g?b=qq&amp;nk=2875997232&amp;s=640">
   <script src="jquery.min.js"></script>
   <script src="layer.js"></script>
   <script src="sha1.js"></script>
@@ -22,14 +24,12 @@
         success: function (data) {
             console.log(data);
             if(data.code == 1){
-              $("body").append('<p style="position:absolute;top:50%;left:50%;-webkit-transform: translate(-50%, -50%);-moz-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);-o-transform: translate(-50%, -50%);transform: translate(-50%, -50%);white-space: pre-line;text-align:center;" >'+data.msg+'</p>');
+              $("body").append('<p style="position:absolute;top:35%;left:50%;-webkit-transform: translate(-50%, -50%);-moz-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);-o-transform: translate(-50%, -50%);transform: translate(-50%, -50%);white-space: pre-line;text-align:center;" >'+data.msg+'</p>');
             }else{
               layer.msg(data.msg, {icon:5,time:2000});
             }
         },
-        error: function () {
-          layer.msg('获取情话请求错误', {icon:2,time:2000});
-        }
+
     });
   </script>
 </head>
